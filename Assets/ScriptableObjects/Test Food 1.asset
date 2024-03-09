@@ -17,3 +17,5 @@ MonoBehaviour:
   Description: This is a test food.
   Objects:
   - {fileID: 11400000, guid: 92cdad43a2a92b846a54aa9340216a68, type: 2}
+  Icon: {fileID: 0}
+  MaxStackSize: 2

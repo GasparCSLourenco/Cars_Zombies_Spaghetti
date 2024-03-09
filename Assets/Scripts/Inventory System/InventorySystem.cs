@@ -28,10 +28,41 @@ public class InventorySystem
 		}
     }
 
-	public bool AddToInventory(FoodData foodData, int amountToAdd) 
+	public bool AddToInventory(FoodData itemToAdd, int amountToAdd) 
 	{
-		inventorySlots[0] = new InventorySlot(foodData,amountToAdd);
-		return true;
+		if (ContainsItem(itemToAdd, out List<InventorySlot> inventorySlot)) //Check if item exists in Inventory
+		{
+            foreach (var slot in inventorySlot)
+            {
+				if (slot.AmountLeftInStack(amountToAdd))
+				{
+					slot.AddToStack(amountToAdd);
+					OnInventorySlotChanged?.Invoke(slot);
+					return true;
+				}
+            }
+		}
+
+		if (HasFreeSlot(out InventorySlot freeSlot)) //Get first available slot
+		{
+			freeSlot.UpdateInventorySlot(itemToAdd, amountToAdd);
+			OnInventorySlotChanged?.Invoke(freeSlot);
+			return true;
+		}
+		return false;
+	}
+
+	public bool ContainsItem(FoodData itemToAdd, out List<InventorySlot> invSlot) 
+	{
+		invSlot = InventorySlots.Where(slot => slot.FoodObj == itemToAdd).ToList();
+
+		return (invSlot != null); 
+	}
+
+	public bool HasFreeSlot(out InventorySlot freeSlot)
+	{
+		freeSlot = InventorySlots.FirstOrDefault(slot => slot.FoodObj == null);
+		return freeSlot != null;
 	}
 
 

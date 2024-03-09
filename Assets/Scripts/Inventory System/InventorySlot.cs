@@ -30,6 +30,12 @@ public class InventorySlot
         stackSize = -1;
     }
 
+    public void UpdateInventorySlot(FoodData data, int amount)
+    {
+        foodObj = data;
+        stackSize = amount;
+    }
+
     public bool AmountLeftInStack(int amountToAdd, out int amountRemaining)
     {
         amountRemaining = FoodObj.MaxStackSize - stackSize;
