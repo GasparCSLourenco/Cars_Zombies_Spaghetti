@@ -6,7 +6,7 @@ using UnityEngine;
 // Code based on a tutorial posted by Dan Pos. Youtube Video - https://www.youtube.com/watch?v=sPBhDcuBuIA&list=PL-hj540P5Q1hLK7NS5fTSNYoNJpPWSL24&pp=iAQB
 
 [RequireComponent(typeof(Collider))]
-[RequireComponent(typeof(UniqueId))]
+
 public class FoodPickUp : MonoBehaviour
 {
 	public float PickUpRadius = 1.0f;
@@ -34,6 +34,7 @@ public class FoodPickUp : MonoBehaviour
 	private void Start()
 	{
 		SaveGameManager.data.activeFoods.Add(id, saveData);
+		Debug.Log(SaveGameManager.data.collectedItems.Contains(id));
 	}
 
 	private void LoadGame(SaveData data)

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6265318527869062797}
   - component: {fileID: 2660334545480183917}
   - component: {fileID: 5632007965786619209}
+  - component: {fileID: -589139107158458191}
   m_Layer: 0
   m_Name: Tomato
   m_TagString: Untagged
@@ -70,6 +71,23 @@ MonoBehaviour:
   PickUpRadius: 1
   FoodData: {fileID: 11400000, guid: 4fdd1552045ff504db0d1dfa600f9819, type: 2}
   myCollider: {fileID: 0}
+  saveData:
+    FoodData: {fileID: 0}
+    Position: {x: 0, y: 0, z: 0}
+    Rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &-589139107158458191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4333119342703517595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4a0cd4ca40cb52469b4cb341ef02835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: 71965da9-f128-497c-b4a7-cb3231a96321
 --- !u!1 &4878534130010951794
 GameObject:
   m_ObjectHideFlags: 0
