@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Test Food 1
   m_EditorClassIdentifier: 
   Id: 1
-  Name: Test Food 1
-  Description: This is a test food.
+  Name: Tomato
+  Description: This is a tomato.
   Objects:
   - {fileID: 11400000, guid: 92cdad43a2a92b846a54aa9340216a68, type: 2}
-  Icon: {fileID: 0}
-  MaxStackSize: 2
+  Icon: {fileID: 861156644, guid: e39c32dd27f7c0a499887811e0fc2fd8, type: 3}
+  MaxStackSize: 5

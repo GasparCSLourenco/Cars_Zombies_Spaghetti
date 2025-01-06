@@ -23,7 +23,7 @@ Shader "TextMeshPro/Sprite"
 		Tags
 		{ 
 			"Queue"="Transparent" 
-			"IgnoreProjector"="True" 
+			"IgnoreCodeor"="True" 
 			"RenderType"="Transparent" 
 			"PreviewType"="Plane"
 			"CanUseSpriteAtlas"="True"

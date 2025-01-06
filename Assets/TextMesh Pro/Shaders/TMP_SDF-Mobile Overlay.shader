@@ -57,7 +57,7 @@ SubShader {
 	Tags
   {
 		"Queue"="Overlay"
-		"IgnoreProjector"="True"
+		"IgnoreCodeor"="True"
 		"RenderType"="Transparent"
 	}
 
