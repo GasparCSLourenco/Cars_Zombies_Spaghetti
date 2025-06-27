@@ -8,6 +8,7 @@ public class SaveData
 	public SerializableDictionary<string, InventorySaveData> chestDictionary;
 	public SerializableDictionary<string, FoodPickUpSaveData> activeFoods;
     public InventorySaveData playerInventory;
+    
 
 	public List<string> collectedItems; //List of Id's of items
     public SaveData()

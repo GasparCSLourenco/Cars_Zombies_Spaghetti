@@ -34,7 +34,7 @@ public class FoodPickUp : MonoBehaviour
 	private void Start()
 	{
 		SaveGameManager.data.activeFoods.Add(id, saveData);
-		Debug.Log(SaveGameManager.data.collectedItems.Contains(id));
+		
 	}
 
 	private void LoadGame(SaveData data)

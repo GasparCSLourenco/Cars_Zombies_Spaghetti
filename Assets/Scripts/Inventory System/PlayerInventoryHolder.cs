@@ -41,6 +41,7 @@ public class PlayerInventoryHolder : InventoryHolder
 	{
 		if(primaryInventorySystem.AddToInventory(food, amount)) 
 		{
+			OnPlayerInventoryChanged.Invoke();
 			return true;
 		}
 		return false;

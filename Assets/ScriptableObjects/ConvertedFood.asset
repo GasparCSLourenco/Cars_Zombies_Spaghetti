@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e798a7b2b1b08824b9c5573a24a05a52, type: 3}
-  m_Name: Processing Objects Data
+  m_Script: {fileID: 11500000, guid: c9f3ad1c325725b4e908c09d62b4e101, type: 3}
+  m_Name: ConvertedFood
   m_EditorClassIdentifier: 
-  Id: 1
-  ProcessingDuration: 5
+  Id: 3
+  Name: Baked Tomato
+  Description: 
+  Icon: {fileID: -1552074068, guid: e39c32dd27f7c0a499887811e0fc2fd8, type: 3}
   MaxStackSize: 1

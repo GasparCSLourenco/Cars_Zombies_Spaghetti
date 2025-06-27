@@ -18,7 +18,7 @@ public class FoodData : ScriptableObject
 	public string Name;
 	[TextArea(4,4)]
 	public string Description;
-	public List<ProcessingObjectsData> Objects;
 	public Sprite Icon;
 	public int MaxStackSize;
+	
 }
